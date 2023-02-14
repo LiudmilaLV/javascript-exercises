@@ -16,5 +16,15 @@ const removeFromArray = function(arr, ...items) {
     return newArr;
 };
 
+/*  How it's supposed to be done:
+    const removeFromArray = function (array, ...args) {
+    const newArr = [];
+    array.forEach((item) => {
+        if (!args.includes(item)) {
+        newArr.push(item);
+        }
+    return newArr;
+    }; */
+
 // Do not edit below this line
 module.exports = removeFromArray;
